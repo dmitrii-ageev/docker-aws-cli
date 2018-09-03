@@ -12,7 +12,7 @@ RUN apk -v --update add \
     && rm /var/cache/apk/*
 
 VOLUME /root/.aws
-VOLUME /project
-WORKDIR /project
+VOLUME /workdir
+WORKDIR /workdir
 
 ENTRYPOINT ["aws"]
