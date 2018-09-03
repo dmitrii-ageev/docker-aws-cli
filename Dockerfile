@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine
 MAINTAINER Dmitrii Ageev <d.ageev@gmail.com>
 
 RUN apk -v --update add \
