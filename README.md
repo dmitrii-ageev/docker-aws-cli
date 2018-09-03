@@ -29,7 +29,7 @@ To use aws-cli.sh as a drop-in replacement for calls to the aws-cli, use one of 
 $ alias aws-cli='docker run --rm -t $(tty &>/dev/null && echo "-i") -e "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" -e "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" -e "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}" -v "$(pwd):/workdir" dmitriiageev/aws-cli'
 ```
 
-#### Or drop it into your path named AWS:
+#### Or drop it into your path named "aws-cli":
 ```
 $ curl -o /usr/local/bin/aws-cli https://raw.githubusercontent.com/dmitrii-ageev/aws-cli/master/aws-cli.sh && chmod a+x /usr/local/bin/aws-cli
 
