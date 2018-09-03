@@ -26,13 +26,13 @@ To use aws.sh as a drop-in replacement for calls to the aws-cli, use one of the 
 
 #### Add an alias to your shell:
 ```
-alias aws='docker run --rm -t $(tty &>/dev/null && echo "-i") -e "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" -e "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" -e "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}" -v "$(pwd):/project" mesosphere/aws-cli'
+alias aws='docker run --rm -t $(tty &>/dev/null && echo "-i") -e "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" -e "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" -e "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}" -v "$(pwd):/project" dmitriiageev/aws-cli'
 
 ```
 
 #### Or drop it into your path named AWS:
 ```
-curl -o /usr/local/bin/aws https://raw.githubusercontent.com/mesosphere/aws-cli/master/aws.sh && chmod a+x /usr/local/bin/aws
+curl -o /usr/local/bin/aws https://raw.githubusercontent.com/dmitriiageev/aws-cli/master/aws.sh && chmod a+x /usr/local/bin/aws
 
 ```
 
